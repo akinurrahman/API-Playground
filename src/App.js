@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import './App.css'
+import Navbar from "./components/navbar/Navbar";
+import Jokes from "./components/show more/Jokes";
+import Facts from "./components/Facts/Facts";
+import Quotes from "./components/Quotes/Quotes";
+import ConvertCurrency from "./components/currency-convert/ConvertCurrency";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/currency-converter" element={<ConvertCurrency />} />
+          <Route path="/jokes" element={<Jokes />} />
+          <Route path="/facts" element={<Facts />} />
+          <Route path="/quotes" element={<Quotes />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
