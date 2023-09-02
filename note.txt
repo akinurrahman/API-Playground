@@ -1,0 +1,7 @@
+new_amount: 92.63
+​
+new_currency: "EUR"
+​
+old_amount: 100
+​
+old_currency: "USD"

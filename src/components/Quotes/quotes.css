@@ -1,0 +1,18 @@
+.quote-author {
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* Category select styles */
+.category-quote-select {
+  margin-bottom: 20px;
+}
+
+.select-quote-category {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 43%;
+  text-align: center;
+}
